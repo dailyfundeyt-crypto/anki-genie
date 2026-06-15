@@ -75,11 +75,10 @@ export const Route = createFileRoute("/api/extract-vocab")({
         const model = gateway("google/gemini-3-flash-preview");
 
         try {
-          const { output } = await generateText({
+          const { experimental_output: output } = await generateText({
             model,
             system: SYSTEM_PROMPT,
-            // @ts-expect-error multimodal content blocks accepted by provider
-            messages: [{ role: "user", content }],
+            messages: [{ role: "user", content: content as never }],
             experimental_output: Output.object({ schema: CardsSchema }),
           });
           return Response.json(output);
