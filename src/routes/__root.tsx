@@ -77,14 +77,18 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
+      { title: "Text to Anki" },
+      { name: "description", content: "Anki Genie generates Anki flashcards from text and images, aiding language learning." },
       { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { property: "og:title", content: "Text to Anki" },
+      { property: "og:description", content: "Anki Genie generates Anki flashcards from text and images, aiding language learning." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:title", content: "Text to Anki" },
+      { name: "twitter:description", content: "Anki Genie generates Anki flashcards from text and images, aiding language learning." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7efb61bb-fa82-4c24-8f54-d5cd1c15f40e/id-preview-122688b1--29b8de61-60ed-4e0b-8885-9c24245c5d1e.lovable.app-1781504984961.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/7efb61bb-fa82-4c24-8f54-d5cd1c15f40e/id-preview-122688b1--29b8de61-60ed-4e0b-8885-9c24245c5d1e.lovable.app-1781504984961.png" },
     ],
     links: [
       {
